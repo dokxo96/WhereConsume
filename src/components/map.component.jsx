@@ -5,41 +5,27 @@ const MapComponent = () => {
     const initialMarkers = [
         {
             position: {
-                lat: 28.625485,
-                lng: 79.821091
+                lat: 20.678240,
+                lng: -103.342080
             },
-            label: { color: "white", text: "P1" },
+            label: { color: "red", text: "P1" },
             draggable: true
         },
-        {
-            position: {
-                lat: 28.625293,
-                lng: 79.817926
-            },
-            label: { color: "white", text: "P2" },
-            draggable: false
-        },
-        {
-            position: {
-                lat: 28.625182,
-                lng: 79.81464
-            },
-            label: { color: "white", text: "P3" },
-            draggable: true
-        },
+       
     ];
     
     const [activeInfoWindow, setActiveInfoWindow] = useState("");
     const [markers, setMarkers] = useState(initialMarkers);
 
     const containerStyle = {
-        width: "100%",
-        height: "400px",
+        width: "50%",
+        height: "600px",
     }
 
     const center = {
-        lat: 28.626137,
-        lng: 79.821603,
+        
+        lat: 20.679307,
+        lng: -103.340628
     }
 
     const mapClicked = (event) => { 

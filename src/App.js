@@ -1,9 +1,12 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 import "./styles/Home.css";
 import Map from "./components/map.component"
-export default function Home() {
+ export default function Home() {
   return (
     <div className="">
+      <div className=" w-full   align-top items-center">
+        <h1>Where spend your crypto?</h1>
+        </div>
       <div className="grid justify-items-stretch ">
       <div className=" w-40 connect">
           <ConnectWallet />
